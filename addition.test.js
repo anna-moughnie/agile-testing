@@ -15,5 +15,5 @@ test.each([
     [5, -10, 15],
     [0, 2, 2],
 ])("a + b = c", (a, b, expected) => {
-    a + b === c;
+    expect(addition(a, b)).toBe(expected);
 });
