@@ -12,8 +12,8 @@ test("19 + 84 = 103", () => {
 
 test.each([
     [3, 4, 7],
-    [5, -10, 15],
+    [5, -10, -5],
     [0, 2, 2],
 ])("a + b = c", (a, b, expected) => {
-    a + b === c;
+    expect(addition(a, b)).toBe(expected);
 });
